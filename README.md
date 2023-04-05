@@ -1,2 +1,1 @@
-# my-blog
-My Blog
+### My Personal Blog
