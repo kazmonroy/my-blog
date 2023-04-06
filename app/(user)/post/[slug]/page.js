@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
 import { RichTextComponents } from '../../../components/RichTextComponents';
 
+export const revalidate = 30;
+
 export async function generateStaticParams() {
   const query = groq`
   *[_type=='post' ]{
@@ -14,6 +16,7 @@ export async function generateStaticParams() {
 `;
 
   const slugs = await client.fetch(query);
+  console.log(slugs);
   const slugRoutes = slugs.map((slug) => slug.slug.current);
 
   return slugRoutes.map((slug) => ({ slug }));

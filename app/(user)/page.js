@@ -14,6 +14,8 @@ export const metadata = {
   },
 };
 
+export const revalidate = 30;
+
 const query = groq`
   *[_type=='post']{
     ...,
