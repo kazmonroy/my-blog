@@ -23,12 +23,11 @@ export default function Blog({ post }) {
           })}
         </p>
         <p className='font-medium text-base text-zinc-800 py-2'>{post.title}</p>
-        {/* <h1>{post.author.name}</h1> */}
         <p className='line-clamp-2 text-sm text-zinc-600 font-light'>
           {post.body[0].children[0].text}
         </p>
         <p className='flex items-center gap-2 text-sm text-teal-500 pt-4'>
-          Read more <ArrowRight className='h-3 w-3 ' />
+          Read more <ArrowRight className='h-3 w-3' />
         </p>
       </div>
     </div>

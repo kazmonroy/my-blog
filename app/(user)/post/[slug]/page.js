@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import { groq } from 'next-sanity';
 import { client } from '@/lib/sanity.client';
-import urlFor from '@/lib/urlFor';
-import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
 import { RichTextComponents } from '../../../components/RichTextComponents';
+import { ArrowLeft } from 'react-feather';
 
 export const revalidate = 30;
 
@@ -34,20 +33,32 @@ export default async function PostPage({ params: { slug } }) {
   const post = await client.fetch(query, { slug });
 
   return (
-    <article className='p-4'>
-      <p>
-        {new Date(post._createdAt).toLocaleDateString('en-US', {
-          day: 'numeric',
-          month: 'long',
-          year: 'numeric',
-        })}
-      </p>
-      <p>{post.title}</p>
-      <h1>{post.author.name}</h1>
-      <div></div>
-      <PortableText value={post.body} components={RichTextComponents} />
+    <section className='sm:mx-8 border-x-2 border-x-zinc-100/50 bg-white p-6 h-screen'>
+      <div className='lg:px-52 md:px-20'>
+        <Link href={'/'}>
+          <button className='p-4 my-4 bg-white rounded-full border border-zinc-100 shadow-lg shadow-zinc-800/5 '>
+            <ArrowLeft className='h-3 w-3 bg-white font-semibold text-zinc-500 hover:text-zinc-800' />
+          </button>
+        </Link>
+        <article className='p-4'>
+          <div className='mb-4'>
+            <p className='text-base text-zinc-400'>
+              {new Date(post._createdAt).toLocaleDateString('en-US', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+              })}
+            </p>
+            <h2 className='mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'>
+              {post.title}
+            </h2>
+          </div>
 
-      <Link href={'/'}>Go back</Link>
-    </article>
+          {/* <h1>{post.author.name}</h1> */}
+
+          <PortableText value={post.body} components={RichTextComponents} />
+        </article>
+      </div>
+    </section>
   );
 }

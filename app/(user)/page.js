@@ -9,7 +9,7 @@ import BlogList from '../components/BlogList';
 export const metadata = {
   title: 'Home',
   icons: {
-    icon: '/vercel.svg',
+    icon: '/favicon.svg',
   },
 };
 

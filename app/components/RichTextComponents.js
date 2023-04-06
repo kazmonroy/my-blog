@@ -18,9 +18,7 @@ export const RichTextComponents = {
     },
 
     list: {
-      bullet: ({ children }) => (
-        <ul className='mt-xl list-disc text-red-400'>{children}</ul>
-      ),
+      bullet: ({ children }) => <ul className='mt-xl list-disc'>{children}</ul>,
       number: ({ children }) => (
         <ol className='mt-lg list-decimal'>{children}</ol>
       ),
@@ -35,7 +33,7 @@ export const RichTextComponents = {
     h1: ({ children }) => <h1 className='text-5xl my-4'>{children}</h1>,
     h2: ({ children }) => <h2 className='text-4xl my-4'>{children}</h2>,
     h3: ({ children }) => (
-      <h3 className='text-3xl text-teal-600 my-4'>{children}</h3>
+      <h3 className='text-3xl text-zinc-800 py-2'>{children}</h3>
     ),
     h4: ({ children }) => <h4 className='text-2xl my-4'>{children}</h4>,
     blockquote: ({ children }) => (
@@ -43,6 +41,15 @@ export const RichTextComponents = {
         {children}
       </blockquote>
     ),
+    normal: ({ children }) => <p className='text-zinc-500'>{children}</p>,
+  },
+
+  listItem: {
+    bullet: ({ children }) => (
+      <li className='text-zinc-500 py-2'>{children}</li>
+    ),
+
+    checkmarks: ({ children }) => <li>{children}</li>,
   },
 
   marks: {
