@@ -17,7 +17,7 @@ export default function Hero() {
           <h1 className='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl '>
             Software designer, founder, and amateur astronaut.
           </h1>
-          <p className='text-base font-regular leading-loose text-zinc-500 dark:text-zinc-400'>
+          <p className='text-base font-regular leading-relaxed text-zinc-500 dark:text-zinc-400'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             natus cum eligendi dicta soluta reiciendis sit at eaque cumque
             consectetur.

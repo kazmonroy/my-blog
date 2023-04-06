@@ -25,7 +25,7 @@ export default function Blog({ post }) {
         <p className='font-medium text-base text-zinc-800 py-2 dark:text-zinc-100'>
           {post.title}
         </p>
-        <p className='line-clamp-2 text-sm text-zinc-600 font-regular dark:text-zinc-400'>
+        <p className='line-clamp-2 leading-relaxed text-sm text-zinc-600 font-regular dark:text-zinc-400'>
           {post.body[0].children[0].text}
         </p>
         <p className='flex items-center gap-2 text-sm text-teal-500 pt-4'>
