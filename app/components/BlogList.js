@@ -4,8 +4,6 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import ClientSideRoute from './ClientSideRoute';
 
 export default function BlogList({ posts }) {
-  // console.log(posts[0].slug.current);
-
   return (
     <div className='grid grid-cols-1 p-10 gap-10 md:grid-cols-2'>
       {posts.map((post) => (

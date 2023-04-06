@@ -6,6 +6,19 @@ import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
 import { RichTextComponents } from '../../../components/RichTextComponents';
 
+export async function generateStaticParams() {
+  const query = groq`
+  *[_type=='post' ]{
+    slug
+  } 
+`;
+
+  const slugs = await client.fetch(query);
+  const slugRoutes = slugs.map((slug) => slug.slug.current);
+
+  return slugRoutes.map((slug) => ({ slug }));
+}
+
 export default async function PostPage({ params: { slug } }) {
   const query = groq`
   *[_type=='post' && slug.current == $slug][0]{
@@ -16,7 +29,6 @@ export default async function PostPage({ params: { slug } }) {
 `;
 
   const post = await client.fetch(query, { slug });
-  console.log(post);
 
   return (
     <article className='p-4'>
