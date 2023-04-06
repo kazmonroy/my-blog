@@ -5,8 +5,8 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section className=''>
-      <div className='bg-white sm:mx-8 border-x-2 border-x-zinc-100/50'>
-        <div className='max-w-3xl px-16 py-10  flex flex-col gap-y-4'>
+      <div className='flex bg-white sm:mx-8 border-x-2 border-x-zinc-100/50 dark:bg-zinc-900 dark:border-x-zinc-50/10'>
+        <div className='max-w-3xl px-16 py-10  flex flex-col gap-y-8'>
           <Image
             className='rounded-full'
             src={'/kaz-monroy-profile-pic.jpeg'}
@@ -17,7 +17,7 @@ export default function Hero() {
           <h1 className='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl '>
             Software designer, founder, and amateur astronaut.
           </h1>
-          <p className='text-base leading-loose text-zinc-500 dark:text-zinc-400'>
+          <p className='text-base font-regular leading-loose text-zinc-500 dark:text-zinc-400'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             natus cum eligendi dicta soluta reiciendis sit at eaque cumque
             consectetur.
@@ -27,7 +27,7 @@ export default function Hero() {
             <li>
               <Link href={'https://twitter.com/kazmonroy'} target='_blank'>
                 <Twitter
-                  className='text-zinc-500 hover:text-zinc-700'
+                  className='text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200'
                   size={16}
                 />
               </Link>
@@ -35,7 +35,7 @@ export default function Hero() {
             <li>
               <Link href={'https://instagram.com/kazmonroy'}>
                 <Instagram
-                  className='text-zinc-500 hover:text-zinc-700'
+                  className='text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200'
                   size={16}
                   target='_blank'
                 />
@@ -44,7 +44,7 @@ export default function Hero() {
             <li>
               <Link href={'https://github.com/kazmonroy'} target='_blank'>
                 <GitHub
-                  className='text-zinc-500 hover:text-zinc-700'
+                  className='text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200'
                   size={16}
                   target='_blank'
                 />
@@ -56,7 +56,7 @@ export default function Hero() {
                 target='_blank'
               >
                 <Linkedin
-                  className='text-zinc-500 hover:text-zinc-700'
+                  className='text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200'
                   size={16}
                   target='_blank'
                 />

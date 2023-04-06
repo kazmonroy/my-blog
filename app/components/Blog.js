@@ -14,7 +14,7 @@ export default function Blog({ post }) {
         />
       </div> */}
 
-      <div className='mt-5 p-4 rounded-lg flex-1 flex flex-col transition group-hover:bg-zinc-100/50  dark:bg-zinc-800/50'>
+      <div className='mt-5 p-4 rounded-lg flex-1 flex flex-col transition group-hover:bg-zinc-100/50  dark:bg-zinc-900 dark:group-hover:bg-zinc-800/70'>
         <p className='text-sm text-zinc-400'>
           {new Date(post._createdAt).toLocaleDateString('en-US', {
             day: 'numeric',
@@ -22,8 +22,10 @@ export default function Blog({ post }) {
             year: 'numeric',
           })}
         </p>
-        <p className='font-medium text-base text-zinc-800 py-2'>{post.title}</p>
-        <p className='line-clamp-2 text-sm text-zinc-600 font-light'>
+        <p className='font-medium text-base text-zinc-800 py-2 dark:text-zinc-100'>
+          {post.title}
+        </p>
+        <p className='line-clamp-2 text-sm text-zinc-600 font-regular dark:text-zinc-400'>
           {post.body[0].children[0].text}
         </p>
         <p className='flex items-center gap-2 text-sm text-teal-500 pt-4'>
