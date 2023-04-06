@@ -1,4 +1,3 @@
-import Header from '../components/Header';
 import Hero from '../components/Hero';
 import { previewData } from 'next/headers';
 import { groq } from 'next-sanity';
@@ -28,7 +27,6 @@ export default async function Home() {
   if (previewData()) {
     return (
       <PreviewSuspense fallback={<h1>Loading preview data</h1>}>
-        {/* <Header /> */}
         <Hero />
 
         <PreviewBlogList query={query} />
@@ -41,11 +39,9 @@ export default async function Home() {
 
   return (
     <main>
-      {/* <Header /> */}
       <Hero />
 
       <BlogList posts={posts} />
-      {/* Blog list */}
     </main>
   );
 }
