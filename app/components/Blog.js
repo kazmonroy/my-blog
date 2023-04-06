@@ -1,7 +1,6 @@
-import ClientSideRoute from './ClientSideRoute';
 import urlFor from '@/lib/urlFor';
 import Image from 'next/image';
-import { ArrowRightIcon } from '@heroicons/react/24/solid';
+import { ArrowRight } from 'react-feather';
 
 export default function Blog({ post }) {
   return (
@@ -27,7 +26,7 @@ export default function Blog({ post }) {
         <h1>{post.author.name}</h1>
         <p className='line-clamp-1'>{post.body[0].children[0].text}</p>
         <p className='flex items-center gap-2'>
-          Read more <ArrowRightIcon className='h-4 w-4 text-red-700' />
+          Read more <ArrowRight className='h-4 w-4 text-red-700' />
         </p>
       </div>
     </div>
