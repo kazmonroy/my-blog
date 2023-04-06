@@ -3,6 +3,8 @@ import { groq } from 'next-sanity';
 import { client } from '@/lib/sanity.client';
 import urlFor from '@/lib/urlFor';
 import Image from 'next/image';
+import { PortableText } from '@portabletext/react';
+import { RichTextComponents } from '../../../components/RichTextComponents';
 
 export default async function PostPage({ params: { slug } }) {
   const query = groq`
@@ -18,16 +20,6 @@ export default async function PostPage({ params: { slug } }) {
 
   return (
     <article className='p-4'>
-      {/* <section>
-        <div className='relative h-80 top-0 w-full  '>
-          <Image
-            className='absolute object-cover object-center mx-auto'
-            src={urlFor(post.mainImage).url()}
-            alt={post.author.name}
-            fill
-          />
-        </div>
-      </section> */}
       <p>
         {new Date(post._createdAt).toLocaleDateString('en-US', {
           day: 'numeric',
@@ -37,7 +29,8 @@ export default async function PostPage({ params: { slug } }) {
       </p>
       <p>{post.title}</p>
       <h1>{post.author.name}</h1>
-      <p className='text-red-400'>{post.body[0].children[0].text}</p>
+      <div></div>
+      <PortableText value={post.body} components={RichTextComponents} />
 
       <Link href={'/'}>Go back</Link>
     </article>
