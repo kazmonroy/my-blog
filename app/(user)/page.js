@@ -26,7 +26,7 @@ export default async function Home() {
   if (previewData()) {
     return (
       <PreviewSuspense fallback={<h1>Loading preview data</h1>}>
-        <Header />
+        {/* <Header /> */}
         <Hero />
 
         <PreviewBlogList query={query} />
@@ -36,11 +36,10 @@ export default async function Home() {
   }
 
   const posts = await client.fetch(query);
-  console.log(posts);
 
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       <Hero />
 
       <BlogList posts={posts} />
