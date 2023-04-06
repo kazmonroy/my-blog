@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section className=''>
-      <div className='bg-white mx-8 border-x-2 border-x-zinc-100'>
+      <div className='bg-white sm:mx-8 border-x-2 border-x-zinc-100/50'>
         <div className='max-w-3xl px-16 py-10  flex flex-col gap-y-4'>
           <Image
             className='rounded-full'
