@@ -2,7 +2,7 @@ import Image from 'next/image';
 import urlFor from '@/lib/urlFor';
 
 export default function BlogList({ posts }) {
-  console.log(posts[0]);
+  console.log(posts[0].body[0].children[0].text);
 
   return (
     <div>
@@ -27,6 +27,8 @@ export default function BlogList({ posts }) {
               fill
             />
           </div>
+
+          <p className='line-clamp-1'>{post.body[0].children[0].text}</p>
         </div>
       ))}
     </div>
