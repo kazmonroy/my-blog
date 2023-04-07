@@ -16,40 +16,50 @@ export const RichTextComponents = {
         </div>
       );
     },
-
-    list: {
-      bullet: ({ children }) => <ul className='mt-xl list-disc'>{children}</ul>,
-      number: ({ children }) => (
-        <ol className='mt-lg list-decimal'>{children}</ol>
-      ),
-
-      checkmarks: ({ children }) => (
-        <ol className='m-auto text-lg'>{children}</ol>
-      ),
-    },
   },
 
   block: {
-    h1: ({ children }) => <h1 className='text-5xl my-4'>{children}</h1>,
-    h2: ({ children }) => <h2 className='text-4xl my-4'>{children}</h2>,
-    h3: ({ children }) => (
-      <h3 className='text-3xl text-zinc-800 py-2'>{children}</h3>
+    h1: ({ children }) => (
+      <h1 className='text-5xl my-4 dark:text-zinc-300'>{children}</h1>
     ),
-    h4: ({ children }) => <h4 className='text-2xl my-4'>{children}</h4>,
+    h2: ({ children }) => (
+      <h2 className='text-4xl my-4 dark:text-zinc-300'>{children}</h2>
+    ),
+    h3: ({ children }) => (
+      <h3 className='text-3xl text-zinc-800 py-2 dark:text-zinc-300'>
+        {children}
+      </h3>
+    ),
+    h4: ({ children }) => (
+      <h4 className='text-2xl my-4 dark:text-zinc-300'>{children}</h4>
+    ),
     blockquote: ({ children }) => (
-      <blockquote className='border-l-purple-500 text-zinc-400'>
+      <blockquote className='border-l-yellow-300 text-zinc-400'>
         {children}
       </blockquote>
     ),
-    normal: ({ children }) => <p className='text-zinc-500'>{children}</p>,
+    normal: ({ children }) => (
+      <p className='text-zinc-400 leading-relaxed	'>{children}</p>
+    ),
   },
 
   listItem: {
     bullet: ({ children }) => (
-      <li className='text-zinc-500 py-2'>{children}</li>
+      <li className='text-zinc-400 leading-relaxed py-4'>{children}</li>
     ),
 
     checkmarks: ({ children }) => <li>{children}</li>,
+  },
+
+  list: {
+    bullet: ({ children }) => (
+      <ul className='py-4 sm:px-8 list-none  '>{children}</ul>
+    ),
+    number: ({ children }) => (
+      <ol className='py-4  ml-6 list-none '>{children}</ol>
+    ),
+
+    checkmarks: ({ children }) => <ul className=''>{children}</ul>,
   },
 
   marks: {

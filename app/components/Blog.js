@@ -22,7 +22,7 @@ export default function Blog({ post }) {
             year: 'numeric',
           })}
         </p>
-        <p className='font-medium text-base text-zinc-800 py-2 dark:text-zinc-100'>
+        <p className='font-medium md:min-h-[68px] text-base text-zinc-800 py-2 dark:text-zinc-100'>
           {post.title}
         </p>
         <p className='line-clamp-2 leading-relaxed text-sm text-zinc-600 font-regular dark:text-zinc-400'>

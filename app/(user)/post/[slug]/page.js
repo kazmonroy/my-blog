@@ -21,6 +21,26 @@ export async function generateStaticParams() {
   return slugRoutes.map((slug) => ({ slug }));
 }
 
+export async function generateMetadata({ params: { slug } }) {
+  const query = groq`
+  *[_type=='post' && slug.current == $slug][0]{
+    ...,
+    author->,
+    categories[]->
+  } 
+`;
+
+  const post = await client.fetch(query, { slug });
+
+  return {
+    title: post.title,
+    description: post.title,
+    icons: {
+      icon: '/favicon.svg',
+    },
+  };
+}
+
 export default async function PostPage({ params: { slug } }) {
   const query = groq`
   *[_type=='post' && slug.current == $slug][0]{
@@ -33,7 +53,7 @@ export default async function PostPage({ params: { slug } }) {
   const post = await client.fetch(query, { slug });
 
   return (
-    <section className='sm:mx-8 sm:border-x-2 border-x-zinc-100/50 bg-white px-2 py-6 sm:p-6 h-screen dark:bg-zinc-900 dark:border-x-zinc-800/50'>
+    <section className='sm:mx-8 sm:border-x-2 border-x-zinc-100/50 bg-white px-2 py-6 sm:p-6 min-h-screen dark:bg-zinc-900 dark:border-x-zinc-800/50'>
       <div className='lg:px-52 md:px-20'>
         <Link href={'/'} className='px-4'>
           <button className='p-4 my-4 bg-white rounded-full border border-zinc-100 shadow-lg shadow-zinc-800/5 dark:bg-zinc-800/90 dark:text-zinc-200  dark:border-zinc-50/10'>

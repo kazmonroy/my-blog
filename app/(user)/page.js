@@ -11,6 +11,18 @@ export const metadata = {
   icons: {
     icon: '/favicon.svg',
   },
+  creator: 'Katherine Monroy',
+  authors: [{ name: 'Katherine Monroy' }],
+  keywords: [
+    'User Experience Designer',
+    'UX Designer',
+    'UI Designer',
+    'Notion',
+    'Web Developer',
+    'Next.js',
+    'React',
+    'JavaScript',
+  ],
 };
 
 export const revalidate = 30;
@@ -40,7 +52,6 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-
       <BlogList posts={posts} />
     </main>
   );
