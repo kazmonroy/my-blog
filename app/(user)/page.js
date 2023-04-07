@@ -5,6 +5,7 @@ import { client } from '@/lib/sanity.client';
 import PreviewSuspense from '../components/PreviewSuspense';
 import PreviewBlogList from '../components/PreviewBlogList';
 import BlogList from '../components/BlogList';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Home',
@@ -51,6 +52,22 @@ export default async function Home() {
 
   return (
     <main>
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script
+        src='https://www.googletagmanager.com/gtag/js?id=G-Y24TCHSHVD'
+        strategy='afterInteractive'
+      />
+
+      <Script id='google-analytics' strategy='afterInteractive'>
+        {`
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+         
+           gtag('config', 'G-Y24TCHSHVD');
+        `}
+      </Script>
+
       <Hero />
       <BlogList posts={posts} />
     </main>

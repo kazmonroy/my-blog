@@ -54,7 +54,7 @@ export default async function PostPage({ params: { slug } }) {
 
   return (
     <section className='sm:mx-8 sm:border-x-2 border-x-zinc-100/50 bg-white px-2 py-6 sm:p-6 min-h-screen dark:bg-zinc-900 dark:border-x-zinc-800/50'>
-      <div className='lg:px-52 md:px-20'>
+      <div className='lg:px-32 md:px-10 '>
         <Link href={'/'} className='px-4'>
           <button className='p-4 my-4 bg-white rounded-full border border-zinc-100 shadow-lg shadow-zinc-800/5 dark:bg-zinc-800/90 dark:text-zinc-200  dark:border-zinc-50/10'>
             <ArrowLeft className='h-3 w-3 bg-white font-semibold text-zinc-500 hover:text-zinc-800 dark:bg-zinc-800/90 dark:text-zinc-400 dark:hover:text-zinc-100' />
