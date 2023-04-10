@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Twitter, Instagram, GitHub, Linkedin } from 'react-feather';
+import { space_grotesk } from '../../fonts';
 
 export default function About() {
   return (
@@ -18,7 +19,9 @@ export default function About() {
           </div>
 
           <div className='lg:order-first lg:row-span-2 lg:px-12 flex flex-col gap-6'>
-            <h1 className='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl  sm:leading-tight  '>
+            <h1
+              className={`${space_grotesk.className} text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl  sm:leading-tight`}
+            >
               I'm Katherine. I live in Malmö, where I design the future.
             </h1>
             <p className='text-base font-regular leading-7 text-zinc-500 dark:text-zinc-400'>

@@ -4,6 +4,7 @@ import { client } from '@/lib/sanity.client';
 import { PortableText } from '@portabletext/react';
 import { RichTextComponents } from '../../../components/RichTextComponents';
 import { ArrowLeft } from 'react-feather';
+import { space_grotesk } from '@/app/fonts';
 
 export const revalidate = 30;
 
@@ -69,7 +70,9 @@ export default async function PostPage({ params: { slug } }) {
                 year: 'numeric',
               })}
             </p>
-            <h2 className='mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'>
+            <h2
+              className={`${space_grotesk.className} py-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl`}
+            >
               {post.title}
             </h2>
           </div>

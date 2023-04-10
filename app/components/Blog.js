@@ -1,6 +1,7 @@
 import urlFor from '@/lib/urlFor';
 import Image from 'next/image';
 import { ArrowRight } from 'react-feather';
+import { space_grotesk } from '../fonts';
 
 export default function Blog({ post }) {
   return (
@@ -22,7 +23,9 @@ export default function Blog({ post }) {
             year: 'numeric',
           })}
         </p>
-        <p className='font-medium md:min-h-[68px] text-base text-zinc-800 py-2 dark:text-zinc-100'>
+        <p
+          className={`${space_grotesk.className} font-medium md:min-h-[68px] text-base text-zinc-800 py-2 dark:text-zinc-100`}
+        >
           {post.title}
         </p>
         <p className='line-clamp-2 leading-6 text-sm text-zinc-600 font-regular dark:text-zinc-400'>
