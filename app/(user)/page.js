@@ -7,6 +7,7 @@ import PreviewBlogList from '../components/PreviewBlogList';
 import BlogList from '../components/BlogList';
 import Script from 'next/script';
 import Carrousel from '../components/Carrousel';
+import Footer from '../components/Footer';
 
 export const metadata = {
   title: 'Home',
@@ -71,7 +72,6 @@ export default async function Home() {
 
       <Hero />
       <Carrousel />
-
       <BlogList posts={posts} />
     </main>
   );

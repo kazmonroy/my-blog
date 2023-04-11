@@ -6,7 +6,7 @@ import { space_grotesk } from '../../fonts';
 export default function About() {
   return (
     <section className='h-full '>
-      <div className='h-full px-6 py-12 sm:px-16 md:py-32 bg-white sm:mx-8 sm:border-x-2 border-x-zinc-100/50 dark:bg-zinc-900 dark:border-x-zinc-50/5 lg:px-10'>
+      <div className='h-full px-6 sm:px-8 py-12 md:px-10 md:py-32 bg-white sm:mx-8 sm:border-x-2 border-x-zinc-100/50 dark:bg-zinc-900 dark:border-x-zinc-50/5'>
         <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 '>
           <div className='w-60 lg:w-96 lg:pl-20'>
             <Image

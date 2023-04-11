@@ -6,8 +6,8 @@ import { space_grotesk } from '../fonts';
 export default function Hero() {
   return (
     <section className=''>
-      <div className='flex bg-white sm:mx-8 sm:border-x-2 border-x-zinc-100/50 dark:bg-zinc-900 dark:border-x-zinc-50/5 lg:px-10'>
-        <div className='max-w-3xl px-6 sm:px-16 py-12 flex flex-col gap-y-8'>
+      <div className='flex bg-white sm:mx-8 sm:border-x-2 border-x-zinc-100/50 dark:bg-zinc-900 dark:border-x-zinc-50/5 lg:px-10 '>
+        <div className='max-w-3xl px-6 sm:px-8 md:px-12 lg:px-16 py-12 flex flex-col gap-y-8'>
           <Image
             className='rounded-full'
             src={'/kaz-monroy-profile-pic.jpeg'}
