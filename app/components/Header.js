@@ -14,6 +14,9 @@ export default function Header() {
           <li className='relative block  transition hover:text-teal-500  dark:hover:text-teal-400'>
             <Link href={'/blog'}>Blog</Link>
           </li>
+          <li className='relative block  transition hover:text-teal-500  dark:hover:text-teal-400'>
+            <Link href={'/projects'}>Projects</Link>
+          </li>
         </ul>
       </nav>
     </header>

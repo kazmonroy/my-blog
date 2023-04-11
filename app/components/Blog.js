@@ -15,7 +15,7 @@ export default function Blog({ post }) {
         />
       </div> */}
 
-      <div className='mt-5 p-4 rounded-lg flex-1 flex flex-col transition group-hover:bg-zinc-100/50  dark:bg-zinc-900 dark:group-hover:bg-zinc-800/70'>
+      <div className='mt-5 p-8 rounded-xl flex-1 flex flex-col transition group-hover:bg-zinc-100/50  dark:bg-zinc-900 dark:group-hover:bg-zinc-800/70'>
         <p className='text-sm text-zinc-400'>
           {new Date(post._createdAt).toLocaleDateString('en-US', {
             day: 'numeric',
@@ -24,14 +24,14 @@ export default function Blog({ post }) {
           })}
         </p>
         <p
-          className={`${space_grotesk.className} font-medium md:min-h-[68px] text-base text-zinc-800 py-2 dark:text-zinc-100`}
+          className={`${space_grotesk.className} font-medium md:min-h-[68px] text-base text-zinc-800 py-4 dark:text-zinc-100`}
         >
           {post.title}
         </p>
         <p className='line-clamp-2 leading-6 text-sm text-zinc-600 font-regular dark:text-zinc-400'>
           {post.body[0].children[0].text}
         </p>
-        <p className='flex items-center gap-2 text-sm text-teal-500 pt-4'>
+        <p className='flex items-center gap-2 text-sm text-teal-500 pt-6'>
           Read more <ArrowRight className='h-3 w-3' />
         </p>
       </div>
