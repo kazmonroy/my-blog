@@ -8,12 +8,12 @@ export default function PageHeader() {
           <h1
             className={`${space_grotesk.className} text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl sm:leading-tight`}
           >
-            Things I've made trying to put my dent in the universe.
+            Things I have designed and built to learn and grow.
           </h1>
           <p className='text-base font-regular leading-7 text-zinc-500 dark:text-zinc-400'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            natus cum eligendi dicta soluta reiciendis sit at eaque cumque
-            consectetur.
+            I enjoy crafting seamless digital experiences that are both
+            aesthetically pleasing and functional. Take a look at my portfolio
+            to see some of the projects I've worked on.
           </p>
         </div>
       </div>
