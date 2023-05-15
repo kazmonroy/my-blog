@@ -22,27 +22,30 @@ export default function About() {
             <h1
               className={`${space_grotesk.className} text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl  sm:leading-tight`}
             >
-              I'm Katherine. I live in Malmö, where I design the future.
+              Hi, I'm Katherine. UX/UI designer and self-taught frontend
+              developer.
             </h1>
             <p className='text-base font-regular leading-7 text-zinc-500 dark:text-zinc-400'>
-              I've loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              I have a diverse background where I’ve spent 8+ years in the
+              marketing world then shifting my career into the digital product
+              design and development space.
             </p>
             <p className='text-base font-regular leading-7 text-zinc-500 dark:text-zinc-400'>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister's motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I'd be able to get to orbit.
+              I work as a User Experience Designer and I am also a self-taught
+              Frontend Developer. I enjoy helping others navigate design
+              challenges with simple solutions and seamless digital experiences
+              driven by research and testing. I believe that equal access to
+              information and digital accessibility has the power to create a
+              more just and inclusive world.
             </p>
 
             <p className='text-base font-regular leading-7 text-zinc-500 dark:text-zinc-400'>
-              Today, I'm the founder of Planetaria, where we're working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really can make it to
-              orbit — from the comfort of their own backyards.
+              Today I'm based in Malmö, but originally hail from Guayaquil,
+              Ecuador. I have a big love for travel (23 countries and counting),
+              beer and good food. When I am not designing, I am coding.
+            </p>
+            <p className='text-base font-regular leading-7 text-zinc-500 dark:text-zinc-400'>
+              Let's connect to talk about all things design and tech!
             </p>
           </div>
 

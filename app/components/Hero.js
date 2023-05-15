@@ -18,12 +18,12 @@ export default function Hero() {
           <h1
             className={`${space_grotesk.className} text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl sm:leading-tight`}
           >
-            Software designer, founder, and amateur astronaut.
+            UX / UI designer, frontend developer and tech junkie.
           </h1>
           <p className='text-base font-regular leading-7 text-zinc-500 dark:text-zinc-400'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            natus cum eligendi dicta soluta reiciendis sit at eaque cumque
-            consectetur.
+            Hej! I'm Katherine, a UX / UI designer and self-taught frontend
+            developer based in Sweden. I have a passion for crafting digital
+            products that provide a seamless user experience.
           </p>
 
           <ul className='flex gap-6 '>
