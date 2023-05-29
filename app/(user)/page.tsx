@@ -5,6 +5,7 @@ import { groq } from 'next-sanity';
 import { PreviewSuspense } from 'next-sanity/preview';
 import PreviewBlogList from '@/app/components/PreviewBlogList';
 import Bloglist from '@/app/components/Bloglist';
+import Footer from '../components/Footer';
 
 const query = groq`
  *[_type=='post']{
@@ -34,6 +35,7 @@ export default async function Home() {
     <div>
       <Hero />
       <Bloglist posts={posts} />
+      <Footer />
     </div>
   );
 }
