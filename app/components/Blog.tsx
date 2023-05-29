@@ -24,10 +24,9 @@ export default function Blog({ post }: any) {
       </div>
       <h2 className='text-xl text-white font-semibold'>{post.title}</h2>
       <p className='line-clamp-2 text-indigo-200 font-light'>
-        {/* {post.body[0].children[0].text} */}
         {post.description}
       </p>
-      <small className='font-light hover:text-indigo-500'>Read more</small>
+      <p className='font-light hover:text-cyan-400'>Read more</p>
     </div>
   );
 }

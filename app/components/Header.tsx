@@ -4,7 +4,8 @@ export default function Header() {
   return (
     <header className='flex py-4 items-center '>
       <Link href='/' className='flex grow'>
-        logo
+        <span className='font-roboto text-indigo-500 text-xl'>K</span>
+        <span className='font-roboto text-cyan-400 text-xl'>M</span>
       </Link>
 
       <nav>

@@ -30,8 +30,6 @@ export default async function Home() {
     );
   }
 
-  // console.log(posts);
-
   return (
     <div>
       <Hero />
