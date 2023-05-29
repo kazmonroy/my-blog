@@ -28,9 +28,8 @@ export default function Blog({ post }: any) {
       <p className='line-clamp-2 text-indigo-200 font-light'>
         {post.description}
       </p>
-      <div className='flex justify-end w-full '>
-        <p className='font-light text-cyan-400 '>Read more</p>
-      </div>
+
+      <p className='font-light text-cyan-400 '>Read more</p>
     </div>
   );
 }
