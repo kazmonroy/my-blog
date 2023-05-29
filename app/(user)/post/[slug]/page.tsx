@@ -42,7 +42,7 @@ export default async function Post({ params: { slug } }: Props) {
   const post: Post = await client.fetch(query, { slug });
 
   return (
-    <article>
+    <article className='py-6'>
       <div className='font-roboto text-indigo-400 text-sm'>
         {new Date(post._createdAt).toLocaleDateString('en-US', {
           day: 'numeric',
@@ -50,7 +50,7 @@ export default async function Post({ params: { slug } }: Props) {
           year: 'numeric',
         })}
       </div>
-      <h2 className='text-xl text-white font-semibold'>{post.title}</h2>
+      <h2 className='text-3xl py-10 text-white font-semibold'>{post.title}</h2>
 
       <PortableText value={post.body} components={RichTextComponents} />
     </article>

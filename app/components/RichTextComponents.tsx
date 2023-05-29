@@ -20,18 +20,18 @@ export const RichTextComponents = {
 
   block: {
     h1: ({ children }: any) => (
-      <h1 className='text-5xl my-4 dark:text-zinc-300'>{children}</h1>
+      <h1 className='text-5xl py-2 mt-4 text-indigo-50'>{children}</h1>
     ),
     h2: ({ children }: any) => (
-      <h2 className='text-4xl my-4 dark:text-zinc-300'>{children}</h2>
+      <h2 className='text-4xl py-2 mt-4 text-indigo-50'>{children}</h2>
     ),
     h3: ({ children }: any) => (
-      <h3 className='text-3xl text-zinc-800 py-2 dark:text-zinc-300'>
+      <h3 className='text-3xl text-indigo-50 py-2 mt-4 dark:text-zinc-300'>
         {children}
       </h3>
     ),
     h4: ({ children }: any) => (
-      <h4 className='text-2xl my-4 dark:text-zinc-300'>{children}</h4>
+      <h4 className='text-2xl py-2 mt-4 text-indigo-50'>{children}</h4>
     ),
     blockquote: ({ children }: any) => (
       <blockquote className='border-l-yellow-300 text-zinc-400'>
@@ -39,7 +39,7 @@ export const RichTextComponents = {
       </blockquote>
     ),
     normal: ({ children }: any) => (
-      <p className='text-zinc-400 leading-relaxed	'>{children}</p>
+      <p className='text-slate-400 font-light leading-relaxed	'>{children}</p>
     ),
   },
   marks: {
