@@ -39,7 +39,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className='relative self-center w-96 max-w-md md:w-full'>
+      <div className='relative self-center w-60 max-w-md md:w-full'>
         <div className='absolute -z-10 p-0.5 bg-gradient-to-r from-sky-500 to-indigo-500 h-full w-full rotate-2 shadow-lg shadow-cyan-500/30 '>
           <div className='h-full w-full bg-indigo-950'></div>
         </div>

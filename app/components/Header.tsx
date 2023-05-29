@@ -1,15 +1,17 @@
 import Link from 'next/link';
+import { Menu } from 'react-feather';
 
 export default function Header() {
   return (
-    <header className='flex py-4 items-center '>
+    <header className='flex py-4 items-center'>
       <Link href='/' className='flex grow'>
         <span className='font-roboto text-indigo-500 text-xl'>K</span>
         <span className='font-roboto text-cyan-400 text-xl'>M</span>
       </Link>
 
       <nav>
-        <ul className='flex gap-12 items-center'>
+        <Menu className='md:hidden' />
+        <ul className=' hidden md:flex gap-12 items-center '>
           <li className='font-white hover:text-indigo-500 font-light transition-all ease-in-out'>
             <Link href=''>About</Link>
           </li>
