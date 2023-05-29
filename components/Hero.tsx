@@ -44,7 +44,7 @@ export default function Hero() {
           src='/kaz-monroy-profile-pic.jpeg'
           width={500}
           height={500}
-          priority={false}
+          priority={true}
           alt='Katherine Monroy profile picture'
         />
       </div>
