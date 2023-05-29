@@ -3,7 +3,7 @@ import { PortableText } from '@portabletext/react';
 import { client } from '@/lib/sanity.client';
 import { Post } from '@/typings';
 import { groq } from 'next-sanity';
-import { RichTextComponents } from '@/components/RichTextComponents';
+import { RichTextComponents } from '@/app/components/RichTextComponents';
 
 interface Props {
   params: {

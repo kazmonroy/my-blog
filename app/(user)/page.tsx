@@ -1,10 +1,10 @@
-import Hero from '@/components/Hero';
+import Hero from '@/app/components/Hero';
 import { draftMode } from 'next/headers';
 import { client } from '@/lib/sanity.client';
 import { groq } from 'next-sanity';
 import { PreviewSuspense } from 'next-sanity/preview';
-import PreviewBlogList from '@/components/PreviewBlogList';
-import Bloglist from '@/components/Bloglist';
+import PreviewBlogList from '@/app/components/PreviewBlogList';
+import Bloglist from '@/app/components/Bloglist';
 
 const query = groq`
  *[_type=='post']{
