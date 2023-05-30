@@ -4,7 +4,7 @@ import { GitHub, Twitter, Linkedin } from 'react-feather';
 
 export default function Hero() {
   return (
-    <div className='flex flex-col md:flex-row gap-16 md:gap-12 py-6 mb-8 md:mb-0 md:py-48  md:items-center'>
+    <div className='flex flex-col md:flex-row gap-16 md:gap-12  mb-8 md:mb-0 h-screen  md:items-center'>
       <div className='max-w-2xl flex flex-col gap-6'>
         <p className='text-indigo-500 font-roboto'>Hi! I&apos;m Kaz</p>
         <p className='text-white font-noto text-4xl md:text-5xl font-semibold leading-tight'>

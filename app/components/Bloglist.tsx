@@ -13,7 +13,7 @@ export const revalidate = 30;
 
 export default function Bloglist({ posts }: Props) {
   return (
-    <div className='flex flex-col items-center gap-6 py-24'>
+    <div className='flex flex-col items-center gap-6 md:h-screen'>
       <h2 className='text-cyan-500 '>Blog</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
         {posts.map((post) => (
