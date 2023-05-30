@@ -26,6 +26,13 @@ export default function Header() {
     };
   }, [ref]);
 
+  useEffect(() => {
+    document.addEventListener('scroll', handleClickOutside, true);
+    return () => {
+      document.removeEventListener('scroll', handleClickOutside, true);
+    };
+  }, [ref]);
+
   return (
     <header className='flex py-4 items-center relative'>
       <Link href='/' className='flex grow'>
