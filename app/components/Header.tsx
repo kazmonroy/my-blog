@@ -8,42 +8,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleMenu(e: any) {
-    // e.stopPropagation();
-    // e.nativeEvent.stopImmediatePropagation();
-
     setIsOpen((prevState) => !prevState);
   }
-
-  // useEffect(() => {
-  //   // document.body.addEventListener('click', () => {
-  //   //   if (isOpen) {
-  //   //     setIsOpen(false);
-  //   //   }
-  //   // });
-
-  // });
-
-  // function useOutsideAlerter(ref: RefObject<HTMLButtonElement>) {
-  //   useEffect(() => {
-  //     /**
-  //      * Alert if clicked on outside of element
-  //      */
-  //     function handleClickOutside(event: any) {
-  //       if (ref.current && !ref.current.contains(event.target)) {
-  //         setIsOpen(false);
-  //       }
-  //     }
-  //     // Bind the event listener
-  //     document.addEventListener('mousedown', handleClickOutside);
-  //     return () => {
-  //       // Unbind the event listener on clean up
-  //       document.removeEventListener('mousedown', handleClickOutside);
-  //     };
-  //   }, [ref]);
-  // }
-
-  // const wrapperRef = useRef(null);
-  // useOutsideAlerter(wrapperRef);
 
   const handleClickOutside = (event: any) => {
     if (ref.current && !ref.current.contains(event.target)) {
