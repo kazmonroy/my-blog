@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         noto: ['Noto Sans', 'sans'],
         roboto: ['Roboto Mono', 'monospace'],
+        colors: {
+          'main-bg': '#243c5a',
+        },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
