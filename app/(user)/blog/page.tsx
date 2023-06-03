@@ -16,7 +16,7 @@ const query = groq`
 
 export const revalidate = 30;
 
-export default async function Home() {
+export default async function Blog() {
   const posts = await client.fetch(query);
 
   const { isEnabled } = draftMode();
@@ -29,9 +29,5 @@ export default async function Home() {
     );
   }
 
-  return (
-    <div>
-      <Bloglist posts={posts} />
-    </div>
-  );
+  return <Bloglist posts={posts} />;
 }

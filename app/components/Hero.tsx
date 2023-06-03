@@ -7,9 +7,9 @@ export default function Hero() {
     <div className='flex flex-col md:flex-row gap-12 h-screen items-center'>
       <div className='max-w-2xl flex flex-col gap-6 grow-0 '>
         <p className='text-indigo-500 font-roboto'>Hi! I&apos;m Kaz</p>
-        <p className='text-white font-noto text-4xl md:text-5xl font-semibold leading-tight'>
+        <h1 className='text-white font-noto text-4xl md:text-5xl font-semibold leading-tight'>
           UX / UI Designer and Frontend Developer
-        </p>
+        </h1>
         <p className='font-noto text-indigo-200 font-light'>
           I&apos;m based in Malmö, Sweden. I have a passion for crafting digital
           products that provide a seamless user experience.

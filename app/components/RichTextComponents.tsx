@@ -39,7 +39,7 @@ export const RichTextComponents = {
       </blockquote>
     ),
     normal: ({ children }: any) => (
-      <p className='text-slate-400 font-light leading-relaxed	'>{children}</p>
+      <p className='text-slate-400 font-light leading-7	'>{children}</p>
     ),
   },
   marks: {

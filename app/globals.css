@@ -24,3 +24,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   color: var(--main-body-color);
 }
+
+p {
+  line-height: 28px;
+}

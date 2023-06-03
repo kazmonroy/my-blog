@@ -34,9 +34,7 @@ export default async function Home() {
     <div>
       <Hero />
 
-      <section>
-        <Bloglist posts={posts} />
-      </section>
+      <Bloglist posts={posts} />
     </div>
   );
 }
