@@ -4,41 +4,15 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { Menu } from 'react-feather';
 import Logo from './Logo';
+import Navbar from './Navbar';
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function toggleMenu(e: any) {
-    setIsOpen((prevState) => !prevState);
-  }
-
-  const handleClickOutside = (event: any) => {
-    if (ref.current && !ref.current.contains(event.target)) {
-      setIsOpen(false);
-    }
-  };
-
-  const ref: any = useRef(null);
-
-  useEffect(() => {
-    document.addEventListener('click', handleClickOutside, true);
-    return () => {
-      document.removeEventListener('click', handleClickOutside, true);
-    };
-  }, [ref]);
-
-  useEffect(() => {
-    document.addEventListener('scroll', handleClickOutside, true);
-    return () => {
-      document.removeEventListener('scroll', handleClickOutside, true);
-    };
-  }, [ref]);
-
   return (
     <header className='flex py-4 items-center relative'>
       <Logo />
+      <Navbar />
 
-      <nav className=''>
+      {/* <nav className=''>
         <Menu className='md:hidden cursor-pointer ' onClick={toggleMenu} />
 
         <ul className='hidden md:flex gap-12 items-center bg-[#101223]/90`'>
@@ -77,7 +51,7 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </header>
   );
 }
