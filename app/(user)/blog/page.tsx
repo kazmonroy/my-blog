@@ -1,4 +1,3 @@
-import Hero from '@/app/components/Hero';
 import { draftMode } from 'next/headers';
 import { client } from '@/lib/sanity.client';
 import { groq } from 'next-sanity';
@@ -32,11 +31,7 @@ export default async function Home() {
 
   return (
     <div>
-      <Hero />
-
-      <section>
-        <Bloglist posts={posts} />
-      </section>
+      <Bloglist posts={posts} />
     </div>
   );
 }
