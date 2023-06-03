@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { Menu } from 'react-feather';
+import Logo from './Logo';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,10 +36,7 @@ export default function Header() {
 
   return (
     <header className='flex py-4 items-center relative'>
-      <Link href='/' className='flex grow'>
-        <span className='font-roboto text-indigo-500 text-xl'>K</span>
-        <span className='font-roboto text-cyan-400 text-xl'>M</span>
-      </Link>
+      <Logo />
 
       <nav className=''>
         <Menu className='md:hidden cursor-pointer ' onClick={toggleMenu} />

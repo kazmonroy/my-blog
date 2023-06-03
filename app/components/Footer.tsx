@@ -1,3 +1,4 @@
+import Header from './Header';
 export default function Footer() {
   return (
     <footer className='py-8 md:py-4 flex justify-center '>
