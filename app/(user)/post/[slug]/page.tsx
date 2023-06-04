@@ -1,9 +1,9 @@
 import { PortableText } from '@portabletext/react';
-
 import { client } from '@/lib/sanity.client';
 import { Post } from '@/typings';
 import { groq } from 'next-sanity';
 import { RichTextComponents } from '@/app/components/RichTextComponents';
+import { Metadata, ResolvingMetadata } from 'next';
 
 interface Props {
   params: {
@@ -29,13 +29,23 @@ export async function generateStaticParams() {
    slug
 } 
 `;
-
   const slugs: Post[] = await client.fetch(query);
 
   const slugRoutes = slugs.map((slug) => slug.slug.current);
   return slugRoutes.map((slug) => ({
     slug,
   }));
+}
+
+export async function generateMetadata(
+  { params: { slug } }: Props,
+  parent?: ResolvingMetadata
+): Promise<Metadata> {
+  const post: Post = await client.fetch(query, { slug });
+
+  return {
+    title: post.title,
+  };
 }
 
 export default async function Post({ params: { slug } }: Props) {

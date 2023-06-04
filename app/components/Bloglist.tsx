@@ -1,7 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import { Post } from '@/typings';
-import urlFor from '@/lib/urlFor';
+
 import ClientSideRoute from './ClientSideRoute';
 import Blog from './Blog';
 
