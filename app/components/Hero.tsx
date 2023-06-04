@@ -11,8 +11,8 @@ export default function Hero() {
           UX / UI Designer and Frontend Developer
         </h1>
         <p className='font-noto text-indigo-200 font-light'>
-          I&apos;m based in Malmö, Sweden. I have a passion for crafting digital
-          products that provide a seamless user experience.
+          I have a passion for crafting digital products that provide a seamless
+          user experience.
         </p>
 
         <div className='flex gap-8 py-2'>
