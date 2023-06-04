@@ -1,7 +1,7 @@
 import Link from 'next/link';
 export default function Footer() {
   return (
-    <footer className='py-4 mt-8 gap-2 flex flex-col items-center md:flex-row md:justify-between w-full border-t border-indigo-400/30'>
+    <footer className='py-8 mt-8 gap-6 flex flex-col items-center md:flex-row md:justify-between w-full border-t border-indigo-400/20'>
       <ul className='flex gap-12 items-center bg-[#101223]/90` text-sm'>
         <li className='font-white hover:text-indigo-500 font-light transition-all ease-in-out'>
           <Link href='/about'>About</Link>
