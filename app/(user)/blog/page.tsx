@@ -16,6 +16,11 @@ const query = groq`
 
 export const revalidate = 30;
 
+export const metadata = {
+  title: 'Blog - Katherine Monroy',
+  description: 'Blog page',
+};
+
 export default async function Blog() {
   const posts = await client.fetch(query);
 

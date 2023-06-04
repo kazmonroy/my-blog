@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import '../globals.css';
 
 export const metadata = {
-  title: 'Home',
+  title: 'Home - Katherine Monroy',
   description: 'Home page',
   icons: {
     icon: '/icon.png',

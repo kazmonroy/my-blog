@@ -2,6 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GitHub, Twitter, Linkedin } from 'react-feather';
 
+export const metadata = {
+  title: 'About - Katherine Monroy',
+  description: 'About me page',
+};
+
 export default function About() {
   return (
     <div className='py-16'>
