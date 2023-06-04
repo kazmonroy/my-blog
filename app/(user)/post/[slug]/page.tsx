@@ -3,7 +3,7 @@ import { client } from '@/lib/sanity.client';
 import { Post } from '@/typings';
 import { groq } from 'next-sanity';
 import { RichTextComponents } from '@/app/components/RichTextComponents';
-import { Metadata, ResolvingMetadata } from 'next';
+import { Metadata, ResolvingMetadata, ResolvedMetadata } from 'next';
 
 interface Props {
   params: {
@@ -37,10 +37,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata(
-  { params: { slug } }: Props,
-  parent?: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
   const post: Post = await client.fetch(query, { slug });
 
   return {
