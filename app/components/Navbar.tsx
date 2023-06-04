@@ -53,8 +53,8 @@ export default function Navbar() {
         ref={ref}
         className={`${
           isOpen
-            ? 'absolute z-10 backdrop-blur-sm w-screen  opacity-100 top-14 -left-4 py-4 transition-all ease-in-out border-b border-indigo-950'
-            : 'absolute  w-screen  opacity-0 -top-80 -left-4 b py-4 transition-all ease-in-out'
+            ? 'absolute z-10 backdrop-blur-sm w-screen  opacity-100 top-14 -left-8 py-4 transition-all ease-in-out border-b border-indigo-950'
+            : 'absolute  w-screen  opacity-0 -top-80 -left-8 b py-4 transition-all ease-in-out '
         } flex flex-col gap-6 items-center bg-[#101223]/90 md:hidden`}
       >
         <li className='font-white hover:text-indigo-500 font-light transition-all ease-in-out'>

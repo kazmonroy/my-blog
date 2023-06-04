@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='mx-auto max-w-6xl h-full px-6 md:px-12  overflow-x-hidden'>
+      <body className='mx-auto max-w-6xl h-full px-6 md:px-12 overflow-x-hidden'>
         <Header />
         {children}
         <Footer />
