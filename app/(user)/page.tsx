@@ -33,7 +33,6 @@ export default async function Home() {
   return (
     <div>
       <Hero />
-
       <Bloglist posts={posts} />
     </div>
   );
