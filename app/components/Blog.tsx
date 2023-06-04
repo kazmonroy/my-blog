@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Blog({ post }: any) {
   return (
-    <div className='group flex flex-col gap-6'>
+    <div className='group flex flex-col gap-4'>
       <div>
         <div className='font-roboto py-4 text-indigo-400 text-sm'>
           {new Date(post._createdAt).toLocaleDateString('en-US', {

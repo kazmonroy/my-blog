@@ -57,7 +57,7 @@ export default function Hero() {
     <div className='grid grid-cols-1 md:grid-cols-2 gap-12 h-screen content-start md:content-center'>
       <div className='max-w-2xl flex flex-col gap-6 grow-0 '>
         <p className='text-indigo-500 font-roboto'>Hi! I&apos;m Kaz</p>
-        <h1 className='text-white font-noto text-4xl md:text-5xl font-semibold leading-tight '>
+        <h1 className='text-white font-noto text-4xl md:text-5xl font-semibold leading-tight'>
           UX / UI Designer and Frontend Developer
         </h1>
         <p className='font-noto text-indigo-200 font-light'>
@@ -89,19 +89,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      {/* <div className='relative self-center max-w-sm mx-20 md:m-0'>
-        <div className='absolute -z-10 p-0.5 bg-gradient-to-r from-sky-500 to-indigo-500 h-full w-full rotate-2 shadow-lg shadow-cyan-500/30 '>
-          <div className='h-full w-full bg-indigo-950'></div>
-        </div>
-        <Image
-          src='/kaz-monroy-profile-pic.jpeg'
-          width={600}
-          height={600}
-          priority={true}
-          alt='Katherine Monroy profile picture'
-          className='object-cover'
-        />
-      </div> */}
+
       <div className='relative w-full grid justify-center'>
         <div className='relative m-auto max-w-xs md:max-w-sm'>
           <div className='absolute -z-10 p-0.5 bg-gradient-to-r from-sky-500 to-indigo-500 w-full h-full rotate-2 shadow-lg shadow-cyan-500/30 '>

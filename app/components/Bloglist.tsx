@@ -18,7 +18,7 @@ export default function Bloglist({ posts }: Props) {
       <h2 className='text-white text-4xl text-center font-semibold leading-tight'>
         Thoughts about design and development
       </h2>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mb-12'>
         {posts.map((post) => (
           <ClientSideRoute route={`/post/${post.slug.current}`} key={post._id}>
             <Blog post={post} />
